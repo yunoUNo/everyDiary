@@ -144,7 +144,7 @@ func (t *everyDiary) Del(stub shim.ChaincodeStubInterface, args []string) pr.Res
 func (t *everyDiary) History(stub shim.ChaincodeStubInterface, args []string) pr.Response{
 
 	if len(args) <1{
-		return shim.Error("plz check your arguments. must have more than 1")
+		return shim.Error("plz check your arguments. must have more than 1.")
 	}
 
 	diaryName := args[0]
